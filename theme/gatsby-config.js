@@ -8,7 +8,7 @@ module.exports = {
 
     // page content
     headline: "Filipe Santos Correa",
-    subheadline: "I'm a <strong>Front-End</strong> Engineer.<br/> I <strong>love</strong> to create new things everyday.",
+    subheadline: "I'm a <strong>Front-End</strong> Engineer.<br/> I <strong>love</strong> to create new things everyday."
   },
   plugins: [
     {
