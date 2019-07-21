@@ -1,0 +1,27 @@
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links a:hover {
+  border-bottom: 1px solid var(--primary-color);
+  margin-bottom: -1px;
+}
+
+.links svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--text-color-dark);
+  padding: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .links a {
+    margin: 0 0.5rem;
+  }
+
+  .links svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

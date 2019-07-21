@@ -1,0 +1,20 @@
+.headline {
+  font-size: 1.7rem;
+  color: var(--primary-color);
+  font-weight: 300;
+}
+
+.underline {
+  font-size: 1.125rem;
+  color: var(--text-color-dark);
+}
+
+@media (min-width: 576px) {
+  .headline {
+    font-size: 2.5rem;
+  }
+
+  .underline {
+    font-size: 1.5rem;
+  }
+}

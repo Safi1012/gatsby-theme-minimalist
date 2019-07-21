@@ -1,0 +1,20 @@
+.particles {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.outerContainer {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 0.5em;
+  z-index: 1;
+  padding-bottom: 6.5em;
+}
