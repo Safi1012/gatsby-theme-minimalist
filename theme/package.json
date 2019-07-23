@@ -29,6 +29,7 @@
     "gatsby-plugin-sitemap": "^2.2.3",
     "gatsby-plugin-theme-ui": "^0.2.2",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
     "react-particles-js": "^2.6.0"
   },
   "keywords": [
