@@ -18,6 +18,13 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
   "dependencies": {
     "@mdx-js/react": "^1.0.21",
     "gatsby-plugin-manifest": "^2.2.3",
