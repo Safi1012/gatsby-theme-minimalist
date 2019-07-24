@@ -31,16 +31,24 @@ exports.sourceNodes = ({ actions: { createTypes, createNode } }, {
   subHeadline = "I'm a <strong>Front-End</strong> Engineer.<br/> I <strong>love</strong> to create new things everyday.",
   socialList = [
     {
-      icon: 'FiGithub',
-      iconSet: 'fi',
+      icon: 'FaGithub',
       url: 'https://github.com/Safi1012',
       ariaLabel: 'Link to my GitHub profile',
     },
     {
-      icon: 'FiLinkedin',
-      iconSet: 'fi',
+      icon: 'FaTwitter',
+      url: 'https://twitter.com/safi1012',
+      ariaLabel: 'Link to my Twitter profile',
+    },
+    {
+      icon: 'FaLinkedin',
       url: 'https://www.linkedin.com/in/filipe-santoscorrea',
       ariaLabel: 'Link to my LinkedIn profile',
+    },
+    {
+      icon: 'FaDribbble',
+      url: 'https://dribbble.com/safi1012',
+      ariaLabel: 'Link to my Dribbble profile',
     }
   ]
 }) => {

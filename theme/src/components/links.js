@@ -27,7 +27,7 @@ export default () => {
     }
 
     // check if iconName exists in selected iconSet
-    if (!iconName in IconSets[`${iconSetId}`]) {
+    if (!(iconName in IconSets[`${iconSetId}`])) {
       return React.createElement(fallbackIcon, {})
     }
 
