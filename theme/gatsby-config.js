@@ -1,14 +1,6 @@
 module.exports = {
   siteMetadata: {
-    // site info - important for SEO
-    title: "Minimalist Portfolio Gatsby Theme",
-    description: "Hi, my name is Filipe Santos Correa. I\'m a Front-End Engineer from Karlsruhe - Germany.",
-    siteUrl: "https://filipesantoscorrea.com",
-    appName: "Filipe Santos Correa", // Progressive Web App Name
-
-    // page content
-    headline: "Filipe Santos Correa",
-    subheadline: "I'm a <strong>Front-End</strong> Engineer.<br/> I <strong>love</strong> to create new things everyday."
+    siteUrl: "https://..." // only set to enable the generation of a sitemap with 'gatsby-plugin-sitemap'
   },
   plugins: [
     {
@@ -30,24 +22,23 @@ module.exports = {
         }
       }
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `Your full name`,
-    //     short_name: `Name`,
-    //     start_url: `/`,
-    //     background_color: `#ffffff`,
-    //     theme_color: `#0873e8`,
-    //     display: `standalone`,
-    //     icon: `./theme/assets/appicon.png`,
-    //     include_favicon: true
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Your full name`,
+        short_name: `Name`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#0873e8`,
+        display: `standalone`,
+        icon: `./assets/appicon.png`,
+        include_favicon: true
+      }
+    },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        exclude: ["/terms", `/privacy`],
         query: `
           {
             site {
@@ -55,6 +46,14 @@ module.exports = {
                 siteUrl
               }
             }
+
+            minimalistConfig(id: {eq: "gatsby-theme-minimalist-config"}) {
+              title,
+              description,
+              siteUrl,
+              appName
+            }
+  
             allSitePage {
               edges {
                 node {
@@ -62,15 +61,15 @@ module.exports = {
                 }
               }
             }
-        }`
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://your-website.com',
-        sitemap: 'https://your-website.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/', disallow: ["/terms", "/privacy"], }]
+        }`,
+        serialize: ({ site, minimalistConfig, allSitePage }) =>
+          allSitePage.edges.map(edge => {
+            return {
+              url: minimalistConfig.siteUrl + edge.node.path,
+              changefreq: `daily`,
+              priority: 0.7,
+            }
+        })
       }
     },
     `gatsby-plugin-react-helmet`,
