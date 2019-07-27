@@ -1,9 +1,3 @@
-<div align="center">
-  <a href="https://santoscorrea.com">
-    <img alt="Filipe Santos Correa - About Me" src="https://user-images.githubusercontent.com/3514796/55683989-79f20e00-5946-11e9-9893-6238244a8ab3.png" width="300" />
-  </a>
-</div>
-
 ## 👀 Gatsby Minimalist Theme
 
 Welcome to my _Minimalist Gatsby Theme_ repository! A live demo of the theme can be found [here](https://filipesantoscorrea.com).
