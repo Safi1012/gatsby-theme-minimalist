@@ -8,13 +8,13 @@ Welcome to my _Minimalist Gatsby Theme_ repository! A live demo of the theme can
 
 To use the Gatsby Minimalist Theme in your site, follow this instruction:
 
-1. Clone repository: 
+1. Install Theme: 
 ```sh
 yarn add gatsby-theme-minimalist
 ```
 
-3. Add the theme plugin to your ```gatsby-config.js``` file and adjust the options to your needs. <br/>
-You can find a detailed explanation about the options object found below.
+2. Add this theme to your ```gatsby-config.js``` file and adjust the options to fit your needs. <br/>
+You can find a detailed explanation about the options object further below.
 
 ```js
 module.exports = {
@@ -31,7 +31,7 @@ module.exports = {
       // Content
       headline: "Your headline",
       subHeadline: "Your <strong>meaningful</strong> message.<br/>",
-      socialList = [{
+      socialList: [{
         icon: 'FaGithub', // a detailed explanation can be found in the options section
         url: 'https://github.com/your-profile',
         ariaLabel: 'Link to my GitHub profile',
@@ -41,12 +41,12 @@ module.exports = {
 }
 ```
 
-4. Start developing: 
+3. Start developing: 
 ```sh
 yarn develop
 ```
 
-5. Build production: 
+4. Build production: 
 ```sh
 yarn build
 ```
