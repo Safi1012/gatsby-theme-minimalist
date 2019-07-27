@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/Safi1012/gatsby-theme-minimalist.git"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {

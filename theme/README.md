@@ -1,51 +1,76 @@
-# Gatsby Theme Jam Example Submission
+<div align="center">
+  <a href="https://santoscorrea.com">
+    <img alt="Filipe Santos Correa - About Me" src="https://user-images.githubusercontent.com/3514796/55683989-79f20e00-5946-11e9-9893-6238244a8ab3.png" width="300" />
+  </a>
+</div>
 
-This is a bare-bones Gatsby theme to showcase how a [Theme Jam](https://themejam.gatsbyjs.org) submission should look.
+## 👀 Gatsby Minimalist Theme
 
-See the [live demo](https://gatsby-theme-jam-example.netlify.com)
+Welcome to my _Minimalist Gatsby Theme_ repository! A live demo of the theme can be found [here](https://filipesantoscorrea.com).
 
-## Installation
+<br/>
 
-To use this theme in your Gatsby sites, follow these instructions:
+## 💻 Installation
 
-1.  Install the theme
-    ```sh
-    npm install --save gatsby-theme-jam-example
-    ```
+To use the Gatsby Minimalist Theme in your site, follow this instruction:
 
-2.  Add the theme to your `gatsby-config.js`:
-    ```js
-    module.exports = {
-      plugins: [
-        'gatsby-theme-jam-example'
-      ]
+1. Clone repository: 
+```sh
+yarn add gatsby-theme-minimalist
+```
+
+3. Add the theme plugin to your ```gatsby-config.js``` file and adjust the options to your needs. <br/>
+You can find a detailed explanation about the options object found below.
+
+```js
+module.exports = {
+  plugins: [{
+    resolve: "gatsby-theme-minimalist",
+
+    options: {
+      // SEO
+      title: "Your site title",
+      description: "Your site description",
+      siteUrl: "https://your-future-site.com",
+      appName: "Your pwa app name",
+
+      // Content
+      headline: "Your headline",
+      subHeadline: "Your <strong>meaningful</strong> message.<br/>",
+      socialList = [{
+        icon: 'FaGithub', // a detailed explanation can be found in the options section
+        url: 'https://github.com/your-profile',
+        ariaLabel: 'Link to my GitHub profile',
+      }]
     }
-    ```
+  }]
+}
+```
 
-3.  Start your site
-    ```sh
-    gatsby develop
-    ```
+4. Start developing: 
+```sh
+yarn develop
+```
 
-## Submission Checklist
+5. Build production: 
+```sh
+yarn build
+```
 
-To ensure your Theme Jam submission [follows the rules](https://themejam.gatsbyjs.org/rules), use this checklist:
+<br/>
 
-- [ ] Use our [accessibility guide][a11y] to ensure your site meets our accessibility standards
-- [ ] Run a performance audit using [Lighthouse][] and/or [WebPageTest][]
-- [ ] Set up a live demo using [Netlify][] or [GitHub Pages][]
-- [ ] Add installation documentation to the README
-- [ ] Update the `name` field in `package.json`
-- [ ] Update the `author` field in `package.json`
-- [ ] Update the `repository` field in `package.json`
-- [ ] Make sure the theme’s `keywords` in `package.json` include `gatsby`, `gatsby-theme`, and `gatsby-plugin`
-- [ ] Publish your theme to npm ([docs][npmpublish])
-- [ ] Submit your theme at https://themejam.gatsbyjs.org
+## ⚙️ Options
 
-[a11y]: https://gatsbyjs.org/docs/making-your-site-accessible#how-to-improve-accessibility
-[Lighthouse]: https://developers.google.com/web/tools/lighthouse/
-[axe]: https://www.deque.com/axe/
-[WebPageTest]: http://webpagetest.org/
-[Netlify]: https://netlify.com
-[GitHub Pages]: https://pages.github.com/
-[npmpublish]: https://docs.npmjs.com/cli/publish
+In order to provide a big selection of icons, this theme makes use of the fabulous _React Icons_ library. The _React Icons_ library comes with 9 different icon sets (_FontAwesome_, _Ionic_, _Material Design_, _Typicons_, _Github Octicons_, _Feather_, _Game_, _Weather_, and _Dev_). Just browse through the vast list of icons [https://react-icons.netlify.com](https://react-icons.netlify.com/#/icons/fa) and copy the icon name (e.g. `FaTwitter`) and paste it to your options in the `socialList[{icon: 'FaTwitter'}]` option section.
+
+<br/>
+
+## 👩‍💻 Contributing
+
+Just submit an issue, be it a bug report or a feature request. I'm always happy to accept new pull requests.
+
+<br/>
+
+## 🙌 Credits
+
+Special thanks to [@JCofman](https://github.com/JCofman) for the idea and recommendation to use _React Icons_ in this theme!
