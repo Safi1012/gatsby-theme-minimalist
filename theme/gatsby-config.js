@@ -23,19 +23,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Your full name`,
-        short_name: `Name`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#0873e8`,
-        display: `standalone`,
-        icon: `./assets/appicon.png`,
-        include_favicon: true
-      }
-    },
-    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
